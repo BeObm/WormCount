@@ -1,0 +1,7 @@
+names:
+- worm
+nc: 1
+path: ./worm_dataset
+test: val/images
+train: train/images
+val: val/images
