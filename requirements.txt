@@ -1,3 +1,4 @@
+pip
 streamlit==1.46.1
 click==8.1.8
 colorama==0.4.6
