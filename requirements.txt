@@ -4,11 +4,5 @@ pandas
 numpy
 pillow
 opencv-python
-click==8.1.8
-colorama==0.4.6
-tqdm==4.67.1
-blinker==1.9.0
-validators==0.20.0
-pytz==2022.7.1
-torchvision==0.17.2
-torchaudio==2.2.2
+pyyaml
+tqdm
