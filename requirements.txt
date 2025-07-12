@@ -6,11 +6,11 @@ tqdm==4.67.1
 blinker==1.9.0
 validators==0.20.0
 ultralytics==8.3.165
-torchvision==0.17.2
-torchaudio==2.2.2
 opencv-python
 numpy==1.26.4
 pillow==11.2.1
 pandas==2.2.3
 python-dateutil==2.9.0.post0
 pytz==2022.7.1
+torchvision==0.17.2
+torchaudio==2.2.2
