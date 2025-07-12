@@ -11,7 +11,7 @@ import time
 
 # --- CONFIGURATION ---
 LOGO_URL = "logo.png"  # example logo URL
-APP_TITLE = "🐛 Welcome to the Worm Counter Interface"
+APP_TITLE = "🐛 Welcome to the Worm Count Interface"
 DEFAULT_OUTPUT_DIR = "Worm_counter_output"
 
 # --- PAGE SETUP ---
