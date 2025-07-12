@@ -18,8 +18,13 @@ DEFAULT_OUTPUT_DIR = "Worm_counter_output"
 st.set_page_config(page_title=APP_TITLE, page_icon="🐛", layout="wide")
 
 # --- SIDEBAR ---
+
+
 st.sidebar.image(LOGO_URL, use_container_width=True)
-st.sidebar.title("Settings")
+st.sidebar.markdown(
+    "<h1 style='color: red;'>Settings</h1>",
+    unsafe_allow_html=True)
+
 
 output_dir_str = st.sidebar.text_input("Output folder path:", DEFAULT_OUTPUT_DIR)
 output_dir = Path(output_dir_str)
