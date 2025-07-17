@@ -14,7 +14,7 @@ def main():
 
 
     # Train the model
-    model.train(task='detect', data="dataset.yaml", patience=75,epochs=300, imgsz=640, batch=8*4,device=[0,1,2,3],single_cls=True,overlap_mask=False,cache=True,optimizer="AdamW",amp=False,weight_decay=0.0001, box=11.0,dropout=0.2,plots=True)
+    model.train(task='detect', data="dataset.yaml", patience=75,epochs=300, imgsz=640, batch=0.75,freeze=[1,2,3,4,5],single_cls=True,overlap_mask=False,cache="disk", box=9.0,dropout=0.2,plots=True)
 
     # Save final weights
     model.export(format="onnx")  # Optional export
