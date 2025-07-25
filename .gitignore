@@ -2,3 +2,7 @@
 *.iml
 *.xml
 /dataset
+yolo11m.pt
+yolo12x.pt
+/runs/detect/train2
+/runs/detect/train2
