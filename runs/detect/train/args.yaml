@@ -1,17 +1,17 @@
 task: detect
 mode: train
-model: yolo11s.pt
+model: yolo12m.pt
 data: dataset.yaml
-epochs: 500
+epochs: 1500
 time: null
-patience: 100
-batch: 16
+patience: 75
+batch: 8
 imgsz: 640
 save: true
 save_period: -1
-cache: false
-device: null
-workers: 8
+cache: disk
+device: '3'
+workers: 32
 project: null
 name: train
 exist_ok: false
@@ -20,7 +20,7 @@ optimizer: auto
 verbose: true
 seed: 0
 deterministic: true
-single_cls: false
+single_cls: true
 rect: false
 cos_lr: false
 close_mosaic: 10
@@ -28,9 +28,9 @@ resume: false
 amp: true
 fraction: 1.0
 profile: false
-freeze: null
+freeze: range(0, 64)
 multi_scale: false
-overlap_mask: true
+overlap_mask: false
 mask_ratio: 4
 dropout: 0.0
 val: true
@@ -76,7 +76,7 @@ weight_decay: 0.0005
 warmup_epochs: 3.0
 warmup_momentum: 0.8
 warmup_bias_lr: 0.1
-box: 7.5
+box: 12.0
 cls: 0.5
 dfl: 1.5
 pose: 12.0
