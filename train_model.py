@@ -14,7 +14,7 @@ def main():
 
     ls=range(64)
     # Train the model
-    model.train(task='detect', data="dataset.yaml",freeze=ls, device=3, patience=75,epochs=1500, imgsz=640, batch=8,single_cls=True,overlap_mask=False,cache="disk", box=12.0,plots=True,workers=32)
+    model.train(task='detect', data="/content/WormCount/dataset.yaml", patience=75,epochs=1500, imgsz=640, batch=32,single_cls=True,overlap_mask=False,cache="disk", box=12.0,plots=True,workers=32)
 
     # Save final weights
     model.export(format="onnx")  # Optional export
