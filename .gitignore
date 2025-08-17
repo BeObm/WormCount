@@ -6,3 +6,7 @@ yolo11m.pt
 yolo12x.pt
 /runs/detect/train2
 /runs/detect/train2
+runs/detect/train6/weights/last.pt
+runs/detect/train6/weights/best.pt
+runs/detect/train5/weights/last.pt
+runs/detect/train5/weights/best.pt
