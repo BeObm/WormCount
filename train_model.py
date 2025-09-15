@@ -1,5 +1,5 @@
 from onnxslim.core import freeze
-from torch.optim.adamw import AdamW
+# from torch.optim.adamw import AdamW
 from ultralytics import YOLO
 from win32comext.shell.demos.servers.folder_view import tasks
 
@@ -14,7 +14,7 @@ def main():
 
     # ls=range(64)
     # Train the model
-    model.train(task='detect', data="dataset.yaml", patience=75,epochs=1500, imgsz=640, batch=16,single_cls=True,overlap_mask=False,cache="disk", box=11.0,plots=True,workers=32)
+    model.train(task='detect', data="dataset.yaml", patience=75,epochs=1500, imgsz=640,batch=8,single_cls=True,overlap_mask=False,cache="disk", box=11.0,plots=True,workers=32)
 
     # Save final weights
     model.export(format="onnx")  # Optional export

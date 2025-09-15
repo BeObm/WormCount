@@ -30,9 +30,9 @@ def main():
             images_dir=images_directory,
             labels_dir=labels_directory,
             output_dir=output_directory,
-            train_ratio=0.7,  # 70% for training
+            train_ratio=0.8,  # 70% for training
             val_ratio=0.2,  # 20% for validation
-            test_ratio=0.1,  # 10% for testing
+            test_ratio=0.0,  # 10% for testing
             validate_labels=True,
             random_seed=42
         )

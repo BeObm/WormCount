@@ -5,7 +5,7 @@ data: dataset.yaml
 epochs: 1500
 time: null
 patience: 75
-batch: 16
+batch: 8
 imgsz: 640
 save: true
 save_period: -1
@@ -102,4 +102,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: runs\detect\train6
+save_dir: D:\OBM\CODES\WormCount\runs\detect\train6
