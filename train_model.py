@@ -10,11 +10,11 @@ def main():
     setup_dataset()
 
     # Load a YOLOv8 model (nano is fastest, switch to 'yolov8s' or 'yolov8m' for better accuracy)
-    model = YOLO("yolo12m.pt")  # Pretrained base model
+    model = YOLO("yolo12s.pt")  # Pretrained base model
 
-    # ls=range(64)
+    # ls=range(2)
     # Train the model
-    model.train(task='detect', data="dataset.yaml", patience=75,epochs=1500, imgsz=640,batch=8,single_cls=True,overlap_mask=False,cache="disk", box=11.0,plots=True,workers=32)
+    model.train(task='detect', data="dataset.yaml",patience=75,epochs=900, imgsz=640,batch=16,overlap_mask=True,workers=32)
 
     # Save final weights
     model.export(format="onnx")  # Optional export
