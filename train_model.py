@@ -14,8 +14,8 @@ def main():
 
     # ls=range(200)
     # Train the model
-    model.train(task='detect', data="dataset.yaml", patience=75, epochs=1500, imgsz=640, batch=8, single_cls=True,
-                overlap_mask=False, cache="disk", box=11.0, plots=True, workers=32)
+    model.train(task='detect', data="dataset.yaml",device=2, patience=75, epochs=5000, imgsz=640, batch=16, single_cls=True,
+                overlap_mask=False, box=11.0, plots=True, workers=32)
     # Save final weights
     model.export(format="onnx")  # Optional export
     print("Training completed!")
