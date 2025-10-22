@@ -12,4 +12,4 @@ runs/detect/train5/weights/last.pt
 runs/detect/train5/weights/best.pt
 *.jpg
 *.png
-*.pt
+/runs
