@@ -10,3 +10,6 @@ runs/detect/train6/weights/last.pt
 runs/detect/train6/weights/best.pt
 runs/detect/train5/weights/last.pt
 runs/detect/train5/weights/best.pt
+*.jpg
+*.png
+*.pt
