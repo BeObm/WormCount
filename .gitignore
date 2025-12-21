@@ -13,3 +13,4 @@ runs/detect/train5/weights/best.pt
 *.jpg
 *.png
 /runs
+sam2.1_b.pt
